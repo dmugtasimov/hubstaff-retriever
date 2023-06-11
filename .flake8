@@ -1,0 +1,13 @@
+# TODO(dmu) LOW: Migrate to pyproject.toml once https://github.com/PyCQA/flake8/issues/234 is resolved
+[flake8]
+ignore = W503,W504,F403,F405,D403,C101,I100,I201,E203
+exclude =
+    .git,
+    __pycache__,
+filename = *.py
+accept-encodings = utf-8
+inline-quotes = single
+max-complexity = 10
+max-line-length = 99
+max-linenumber = 500
+multiline-quotes = double

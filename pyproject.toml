@@ -1,0 +1,37 @@
+[tool.poetry]
+name = "hubstaff-retriever"
+version = "0.1.0"
+description = ""
+authors = ["Dmitry Mugtasimov <dmugtasimov@gmail.com>"]
+packages = [{include = "hubstaff_retriever"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+[tool.poetry.group.dev.dependencies]
+pre-commit = "^3.3.2"
+pytest = "^7.3.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.isort]
+line_length = 99
+multi_line_output = 5
+sections = "FUTURE,STDLIB,DJANGO,THIRDPARTY,FIRSTPARTY,LOCALFOLDER"
+
+[tool.yapf]
+based_on_style = "google"
+column_limit = 99
+coalesce_brackets = true
+dedent_closing_brackets = true
+align_closing_bracket_with_visual_indent = true
+allow_split_before_dict_value = false
+
+[tool.mypy]
+python_version = "3.11"
+
+[tool.pytest.ini_options]
+python_files = "*_test.py"
+testpaths = ["hubstaff_retriever"]

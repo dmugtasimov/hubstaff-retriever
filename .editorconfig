@@ -1,0 +1,6 @@
+# This is not an IDE specific file. See https://editorconfig.org/
+[*.py]
+max_line_length = 99
+charset = utf-8
+indent_style = space
+indent_size = 4
